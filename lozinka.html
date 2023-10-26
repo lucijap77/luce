@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" type="text/CSS" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        Formica
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="cta-form">
+            <p ID="osamSlova">At least 8 characters</p>
+            <p ID="maloSlovo">One small letter</p>
+            <p ID="velikoSlovo">One capital letter</p>
+            <p ID="broj">At least one number</p>
+            <p ID="posebanZnak">Special sign @</p>
+        </div>
+        <form action="" class="form">
+        
+        <input type="text" placeholder="Name" class="form__input" id="name" required/>
+        <label for="name" class="form__label">Name</label>
+    
+        <input type="email" placeholder="Email" class="form__input" id="email" required/>
+        <label for="email" class="form__label">Email</label>
+    
+        <div class="password-container">
+            <input type="password" placeholder="Password" class="form__input" id="password" required/>
+            <label for="password" class="form__label">Password</label>
+            <i class="fa fa-eye" id="eye-icon" class="eye" onclick="vidljivost()"></i>
+        </div>
+
+        <div class="password-container">
+            <input type="password" placeholder="Re-enter Password" class="form__input" id="password1" required/>
+            <label for="password1" class="form__label">Re-enter Password</label>
+            <i class="fa fa-eye" id="eye-icon1" class="eye" onclick="vidljivost1()"></i>
+        </div>
+
+        <div id="jacinaBoja">
+            <div class="prva boja"></div>
+            <div class="druga boja"></div>
+            <div class="treca boja"></div>
+            <div class="cetvrta boja"></div>
+        </div>
+        <br>
+        <p ID="tocnost"></p>
+
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I agree with terms and conditions</label>
+        <p ID="oznaceno">Please follow the terms and conditions.</p>
+    
+        <p id="jacina-lozinke"></p>
+
+        </form>
+    </div>
+    <script src="skripta.js"></script>
+</body>
+</html>
